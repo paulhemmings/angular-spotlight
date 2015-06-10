@@ -1,0 +1,36 @@
+<!doctype html>
+<html ng-app="DeveloperModule" ng-controller="DeveloperController">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Angular lightbox</title>
+  </head>
+
+  <body>
+
+    <!-- content -->
+    <ul>
+      <li ng-repeat="image in images">
+        <img simple-box full-size="{{image.fullsize}}" ng-src="{{image.thumbnail}}" />
+      </li>
+    </ul>
+
+
+    <!-- lib -->
+    <script src="lib/angular/angular.js"></script>
+
+    <!-- wrapper module -->
+    <script src="app/angular-simplebox-module.js"></script>
+
+    <!-- services -->
+    <script src="app/services/simple-box.js"></script>
+
+    <!-- directives -->
+    <script src="../app/directives/simplebox-directive.js"></script>
+
+    <!-- development -->
+    <script src="./app.js"></script>
+    <script src="./controllers/developer-controller.js"></script>
+
+</body>
+</html>

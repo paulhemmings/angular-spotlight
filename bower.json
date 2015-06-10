@@ -1,0 +1,25 @@
+{
+  "name": "angular-lightbox",
+  "main": "./dist/angular-lightbox.min.js",
+  "version": "1.0.0",
+  "dependencies": {
+    "angular": ">=1.3.0"
+  },
+  "ignore": [
+    ".bowerrc",
+    ".jshintrc",
+    ".editorconfig",
+    ".gitattributes",
+    "Gruntfile.js",
+    ".gitignore",
+    "*.html",
+    "lib",
+    "test",
+    "tmp"
+  ],
+  "devDependencies": {
+    "angular-mocks": ">=1.3.x",
+    "angular-scenario": ">=1.3.x"
+  },
+  "appPath": "app"
+}
