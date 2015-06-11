@@ -4,35 +4,10 @@ angular
 
         var currentImageElement = null;
         var options = {
-          fadeInDistance: 50,
           animationSpeed: 50,
           quitOnImageClick: true,
           imageSize : 1,
-          animationSpeed : 20
         };
-
-        function getcss3prop (cssProperty) {
-            var vendors = ["", "-moz-", "-webkit-", "-o-", "-ms-", "-khtml-"],
-                camelCase = function (str) {
-                    return str.replace(/\-([a-z])/gi, function (match, p1) {
-                        return p1.toUpperCase();
-                    });
-                };
-
-            for (var i = 0; i < vendors.length; i++) {
-                var css3propcamel = camelCase(vendors[i] + cssProperty)
-
-                if (css3propcamel.substr(0,2) == "Ms") {
-                    css3propcamel = "m" + css3propcamel.substr(1);
-                }
-
-                if (css3propcamel in document.documentElement.style) {
-                    return css3propcamel;
-                }
-            }
-
-            return "undefined";
-        }
 
         function openImage(imageSource, imageElementId) {
 

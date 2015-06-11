@@ -1,6 +1,6 @@
 {
-  "name": "angular-lightbox",
-  "main": "./dist/angular-lightbox.min.js",
+  "name": "angular-simplebox",
+  "main": "./dist/angular-simplebox.min.js",
   "version": "1.0.0",
   "dependencies": {
     "angular": ">=1.3.0"

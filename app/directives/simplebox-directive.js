@@ -17,7 +17,7 @@ angular.module('AngularSimpleboxModule')
         // $element[0].setAttribute("data-thumbnail", $attrs.identity);
 
         $element[0].addEventListener('click', function() {
-          simpleBoxService.openImage($attrs.fullSize, $attrs.ngSrc);
+          simpleBoxService.openImage($attrs.simpleBox, $attrs.ngSrc);
         });
 
 
