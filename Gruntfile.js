@@ -105,7 +105,7 @@ module.exports = function (grunt) {
               ),
               connect().use(
                 '/lib',
-                connect.static('./app/lib')
+                connect.static('./lib')
               ),
               connect.static('development')
             ];
@@ -186,7 +186,7 @@ module.exports = function (grunt) {
       },
       dist: {
         files: {
-          '<%= yeoman.dist %>/velge-angularjs.min.js': [
+          '<%= yeoman.dist %>/angular-simplebox.min.js': [
             '.tmp/scripts/{,*/}*.js'
           ]
         }
@@ -198,7 +198,7 @@ module.exports = function (grunt) {
       },
       dist: {
         src: '.tmp/scripts/{,*/}*.js',
-        dest: 'dist/velge-angularjs.js',
+        dest: 'dist/angular-simplebox.js',
       },
     },
 
@@ -222,7 +222,7 @@ module.exports = function (grunt) {
       },
       concat: {
         expand: true,
-        cwd: '<%= yeoman.app %>/scripts',
+        cwd: '<%= yeoman.app %>',
         dest: '.tmp/scripts/',
         src: '{,*/}*.js'
       }
